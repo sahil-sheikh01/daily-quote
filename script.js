@@ -5,7 +5,7 @@ const API_URL = "https://dummyjson.com/quotes/random";
 async function getQuote(url) {
     const response = await fetch(url);
     var data = await response.json();
-    quote.textContent = data.content;
+    quote.textContent = data.quote;
     author.textContent = data.author;
 }
 
